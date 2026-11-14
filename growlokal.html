@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hi-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GrowLokal – Get found online. Get more customers.</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6FAF4;--surface:#FFFFFF;--ink:#10231F;--muted:#4C625C;--brand:#0F5C4D;--leaf:#B5E04A;--sun:#F4B63F;--line:#D5E2D6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1A17;--surface:#12282A;--ink:#EAF4EA;--muted:#9DB5AC;--brand:#7FD6B8;--leaf:#B5E04A;--sun:#F4B63F;--line:#23403B}}
+:root[data-theme="dark"]{--bg:#0B1A17;--surface:#12282A;--ink:#EAF4EA;--muted:#9DB5AC;--brand:#7FD6B8;--leaf:#B5E04A;--sun:#F4B63F;--line:#23403B}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.wm{font-size:26px;letter-spacing:-.02em;font-weight:400}
+.wm{font-weight:600}
+.tm{font-family:"DM Sans",system-ui,sans-serif;font-size:10px;font-weight:400;color:var(--muted);vertical-align:super;margin-left:2px}
+.wm b{font-family:"Young Serif",Georgia,serif;font-weight:400;color:var(--brand)}
+.tag{display:block;font-family:Caveat,"Segoe Script",cursive;font-size:17px;font-weight:600;color:var(--brand);line-height:1;margin-top:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:15px}
+.try{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.try input{width:100%;font:inherit;font-size:20px;padding:16px 18px;border-radius:14px;border:2px solid var(--line);background:var(--surface);color:var(--ink);margin:6px 0 18px}
+.try input:focus{outline:3px solid var(--sun);border-color:var(--brand)}
+.frame{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(0,0,0,.35)}
+.bar{display:flex;gap:6px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.bar i{width:9px;height:9px;border-radius:50%;background:var(--line);display:inline-block}
+.site{padding:26px 22px}
+.site h3{font-family:"Young Serif",Georgia,serif;font-weight:400;margin:0 0 4px;font-size:28px;letter-spacing:-.01em;overflow-wrap:anywhere}
+.site p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.acts span{padding:9px 16px;border-radius:999px;background:var(--brand);color:var(--bg);font-size:14px;font-weight:600}
+.acts span.o{background:transparent;border:2px solid var(--line);color:var(--ink)}
+.types{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}
+.types button{font:inherit;font-size:15px;padding:8px 16px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.types button[aria-pressed=true]{background:var(--brand);color:var(--bg);border-color:var(--brand)}
+@media (max-width:760px){.try{grid-template-columns:1fr}}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:15px}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:56px 0 72px}
+h1{font-family:"Young Serif",Georgia,serif;font-size:clamp(40px,7vw,72px);line-height:1.05;letter-spacing:-.02em;font-weight:400;margin:0 0 20px}
+h1 span{display:block;font-weight:400;color:var(--brand)}
+.lead{color:var(--muted);max-width:46ch;margin:0 0 28px}
+.btn{display:inline-block;background:var(--brand);color:var(--bg);padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:10px}
+.mark{display:flex;justify-content:center}
+.mark svg{width:min(100%,340px);height:auto}
+.sprout{transform-origin:50% 100%;animation:grow 1.4s .2s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes grow{from{transform:scale(.1)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.sprout{animation:none}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:"Young Serif",Georgia,serif;font-size:clamp(28px,4vw,40px);letter-spacing:-.015em;line-height:1.15;margin:0 0 28px;font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-family:"Young Serif",Georgia,serif;font-weight:400;margin:0 0 8px;font-size:21px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.steps{display:grid;gap:14px;counter-reset:s;padding:0;list-style:none;max-width:640px}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--leaf);color:#10231F;font-weight:800;display:grid;place-items:center}
+.cta{background:var(--brand);color:var(--bg);border-radius:28px;padding:44px 32px;text-align:center}
+.cta h2{margin-bottom:12px}
+.cta p{margin:0 auto 24px;max-width:48ch;opacity:.9}
+.cta .btn{background:var(--sun);color:#10231F}
+footer{padding:32px 0 40px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:24px}.mark{order:-1}.mark svg{width:200px}.grid{grid-template-columns:1fr}nav{display:none}.btn.alt{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="#top" aria-label="GrowLokal home">
+<svg width="38" height="44" viewBox="0 0 120 140" aria-hidden="true"><use href="#logo"/></svg>
+<span><span class="wm">Grow<b>Lokal</b><sup class="tm">™</sup></span><span class="tag">Get found online. Get more customers.</span></span>
+</a>
+<nav><a href="#kaam">What we do</a><a href="#tareeka">How it works</a><a href="#judo">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+<div>
+<h1>Google Map par ho, <span>ab apni website bhi banaiye.</span></h1>
+<p class="lead">New Market, MP Nagar, Arera Colony, Kolar, Bairagarh: Bhopal ke jin businesses ki Google Map par listing hai par website nahi, GrowLokal unki own website banata hai. Hum aapko Google par dhoondhne laayak banate hain, taaki aas-paas ke customers seedhe aap tak pahunchein. Shop wahi rehti hai, customers badh jaate hain.</p>
+<ul class="chips"><li>Website design</li><li>WhatsApp catalogue</li><li>Google Business Profile</li><li>Logo design</li></ul>
+<a class="btn" href="#preview">See your free preview</a><a class="btn alt" href="#tareeka">How it works</a>
+</div>
+<div class="mark">
+<svg viewBox="0 0 120 140" role="img" aria-label="GrowLokal logo: map pin with a sprout"><use href="#logo"/></svg>
+</div>
+</div>
+
+<section id="preview"><div class="try"><div>
+<h2>Apni website 10 seconds mein dekhiye</h2>
+<p class="lead" style="margin-bottom:12px">Apni shop ka name likhiye aur live preview dekhiye. Aapki website bilkul aisi hi banegi.</p>
+<div class="types" role="group" aria-label="Business type"><button type="button" aria-pressed="true">Sweets</button><button type="button" aria-pressed="false">Salon</button><button type="button" aria-pressed="false">Clinic</button><button type="button" aria-pressed="false">Coaching</button><button type="button" aria-pressed="false">Gym</button><button type="button" aria-pressed="false">Restaurant</button><button type="button" aria-pressed="false">Boutique</button></div>
+<label for="shop" style="font-size:15px;color:var(--muted)">Your shop or business name</label>
+<input id="shop" type="text" maxlength="40" placeholder="e.g. Sharma Sweets" autocomplete="off">
+<a class="btn" id="go" href="https://wa.me/918966900340">Mujhe ye website chahiye</a>
+</div>
+<div class="frame" aria-live="polite"><div class="bar"><i></i><i></i><i></i><span id="url">sharmasweets.in</span></div>
+<div class="site"><h3 id="pn">Sharma Sweets</h3><p id="pd">Open today, 9 AM to 9 PM. Bhopal, Madhya Pradesh</p><div class="acts" id="ac"><span>Call now</span><span>WhatsApp order</span><span class="o">Google Map directions</span></div></div></div></div></section>
+
+<section id="kaam">
+<h2>What Bhopal businesses get</h2>
+<div class="grid">
+<div class="card"><h3>Your own website</h3><p>Shop ka name, photos, timing, address aur Google Map button, sab ek jagah. Google listing se aage ki online identity.</p></div>
+<div class="card"><h3>WhatsApp orders</h3><p>Catalogue banaiye, link share kijiye, aur orders seedhe apne phone par lijiye. Koi complicated app nahi.</p></div>
+<div class="card"><h3>More trust</h3><p>Website hone se "Bhopal mein ..." search karne wale customers ko aapka business zyada reliable aur professional lagta hai.</p></div>
+</div>
+</section>
+
+<section id="tareeka">
+<h2>Getting started is easy</h2>
+<ol class="steps">
+<li><div><b>Google Map listing ka name bhejiye.</b><br><span style="color:var(--muted)">Hum wahin se details lekar website ka draft 24 hours mein bana dete hain.</span></div></li>
+<li><div><b>Catalogue aur offers add kijiye.</b><br><span style="color:var(--muted)">Phone se photos click kijiye, baaki hum sambhal lenge.</span></div></li>
+<li><div><b>Customers khud aayenge.</b><br><span style="color:var(--muted)">Har week dekhiye kitne naye log aapko dhoondh rahe hain.</span></div></li>
+</ol>
+</section>
+
+<section id="judo">
+<div class="cta">
+<h2>Bhopal is searching for you on Google.</h2>
+<p>Apna name aur number bhejiye. Hum aapko WhatsApp par reply karenge.</p>
+<a class="btn" href="https://wa.me/918966900340?text=Namaste%2C%20mujhe%20GrowLokal%20se%20apni%20website%20banwani%20hai">Chat on WhatsApp</a>
+</div>
+</section>
+</main>
+
+<footer><span>© 2026 GrowLokal™. All rights reserved.</span><span>Bhopal, Madhya Pradesh. WhatsApp: 89669 00340</span></footer>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="logo" viewBox="0 0 120 140">
+<path d="M60 136C60 136 10 82 10 52C10 24 32 6 60 6C88 6 110 24 110 52C110 82 60 136 60 136Z" fill="#0F5C4D"/>
+<circle cx="60" cy="52" r="34" fill="#F6FAF4"/>
+<g class="sprout">
+<path d="M60 76V50" stroke="#0F5C4D" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M60 54C60 40 48 32 36 34C36 47 46 56 60 54Z" fill="#7BB82A"/>
+<path d="M60 48C60 34 71 26 84 28C84 42 74 50 60 48Z" fill="#B5E04A"/>
+</g>
+<circle cx="60" cy="94" r="4" fill="#F4B63F"/>
+</symbol>
+</defs>
+</svg>
+<script>
+(function(){var T=[['Sharma Sweets','Fresh mithai and namkeen. Open today, 9 AM to 9 PM. Bhopal',['Call now','Order on WhatsApp','Directions']],['Glow Salon','Haircut, facial and bridal makeup. Open today, 10 AM to 8 PM. Bhopal',['Book appointment','WhatsApp','Directions']],['City Clinic','General physician. Mon to Sat, 10 AM to 7 PM. Bhopal',['Book appointment','Call now','Directions']],['Topper Classes','Classes for 9th to 12th. New batch starts soon. Bhopal',['Book free demo','WhatsApp','Directions']],['Fit Zone Gym','Weights, cardio and personal training. Open 5 AM to 10 PM. Bhopal',['Book free trial','Call now','Directions']],['Spice Garden','Dine-in, takeaway and home delivery. Open today, 11 AM to 11 PM. Bhopal',['Order on WhatsApp','Call now','Directions']],['Aarohi Boutique','Ethnic wear, custom stitching and new arrivals. Open today, 11 AM to 9 PM. Bhopal',['View catalogue','WhatsApp','Directions']]],k=0;
+var i=document.getElementById('shop'),n=document.getElementById('pn'),u=document.getElementById('url'),g=document.getElementById('go'),d=document.getElementById('pd'),a=document.getElementById('ac'),b=document.querySelectorAll('.types button');
+function up(){var t=T[k],v=i.value.trim()||t[0];n.textContent=v;d.textContent=t[1];a.innerHTML=t[2].map(function(x,j){return '<span'+(j==2?' class="o"':'')+'>'+x+'</span>'}).join('');i.placeholder='e.g. '+t[0];var s=v.toLowerCase().replace(/[^a-z0-9]+/g,'');u.textContent=(s||'yourshop')+'.in';g.href='https://wa.me/918966900340?text='+encodeURIComponent('Namaste, mujhe '+v+' ke liye website chahiye')}
+b.forEach(function(x,j){x.addEventListener('click',function(){k=j;b.forEach(function(y,m){y.setAttribute('aria-pressed',m==j)});up()})});
+i.addEventListener('input',up);up()})();
+</script>
+</body>
+</html>
